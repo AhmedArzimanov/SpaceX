@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #010001;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    transition: 1s;
+}
+a.underline:hover{
+    transform: translateY(-5px) scale(1.1);
+    text-decoration: underline;
+}
+*::selection{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+*::-moz-selection{
+    color: rgb(0, 0, 0);
+    background-color: #1F2430;
+}
+body{
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: relative;
+}
+img.logotip{
+    height: 20px;
+}
+.top{
+    width: 100%;
+    height: 10px;
+    top: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+header.header{
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+ul>li{
+    margin: 0 10px;
+}
+a.item-link{
+    color: #fff;
+}
+a.secondary-list-item_LINK{
+    color: #808080;
+}
+section.section{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 120px 0 30px 0;
+}
+h1.title{
+    margin-bottom: 30px;
+    font-size: 64px;
+}
+section.section>h1{
+    font-size: 80px;
+    line-height: 75px;
+    margin: 0 auto 26px;
+}
+section.section>p{
+    max-width: 268px;
+    margin: auto;
+    /*/////////*/
+    font-size: 16px;
+    line-height: 140%;
+    color: rgb(209, 209, 209);
+}
+p.about:after{
+    content: '';
+    display: block;
+    background-color:  #fff;
+    width: 1px;
+    height: 60px;
+    margin: 26px auto 0;
+}
+div.video{
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    height: 750px;
+}
+h1.overview-title{
+    margin-bottom: 45px;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+div.overview{
+    padding-top: 200px;
+    padding-bottom: 300px;
+    position: relative;
+}
+.description{
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+}
+img.rocket{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    z-index: 99999;
+    max-width: 26vw;
+}
+table.table{
+    margin-bottom: 220px;
+    width: auto;
+}
+tr{
+    line-height: 40px;
+}
+td.values{
+    margin-left: 110px;
+    display: flex;
+}
+p.ft-Ib{
+    color: #808080;
+}
+
+h2.overview-title-2{
+    margin-bottom: 45px;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.unmatched-perfomance{
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 5%;
+}
+footer.footer{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center ;
+    text-align: center;
+}
+div.footer-content{
+    width: fit-content;
+    margin: 0 auto;
+}
+.footer-logotip{
+    margin: 0 auto 25px;
+}
+.footer-links-item{
+    line-height: 30px;
+    margin: 0 7px;
+    color: #fff;
+}
+/*//////////////////////////////*/
+.Twitter:hover{
+    color: #1DA1F2;
+}
+.YouTube:hover{
+    color: rgb(255, 0, 0);
+}
+.Instagram:hover{
+    color: #DE4279;
+}
+.Flickr:hover{
+    color: #6C1F88;
+}
+.LinkedIn:hover{
+    color: #02649C;
+}
+.Privacy:hover{
+    color: #C6D400;
+}
+.Policy:hover{
+    color: rgba(59, 170, 59, 0.7);
+}
+/*/////////////////////////////*/
+.mail-link{
+    color: #808080;
+}
+.contact-us-email, .contact-us-email-text{
+    margin-top: 15px;
+    color: #808080;
+}
+div.contact-us{
+    margin: 10px auto 120px;
+    padding: 15px;
+    width: 40%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+.contact-us-text{
+    color: #fff;
+}
+div.contact-us:hover{
+    background-color: white;
+    font-size: 17px;
+    letter-spacing: 10%;
+}
+div.contact-us:active{
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(5px);
+    width: 38%;
+}
+div.contact-us:hover .contact-us-text{
+    color: black;
+}
+
+/*//////////////////////////////////////////////////*/
+
+@media (max-width: 850px){
+    header.header{
+        flex-direction: column;
+        align-items: center;
+    }
+    img.logotip{
+        margin-left: calc((90% - 163px)/2 + 10px);
+    }
+    .main-nav{
+        margin: 20px auto 20px;
+    }
+    td.values{
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 756px){
+    div.video{
+        width: 100vw;
+    }
+    div.overview{
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+
+    table.table{
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 550px){
+    h1.overview-title{
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 120%;
+    }
+    h2.overview-title-2{
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .unmatched-perfomance{
+        max-width: 80vw;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+    td.values{
+        margin-left: 60px;
+    }
+    td{
+        font-size: 14px;
+    }
+    div.overview{
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    table.table{
+        margin-bottom: 110px;
+    }
+}
+@media (max-width: 440px){
+    h1.overview-title{
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 110%;
+    }
+    .unmatched-perfomance{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+
+    tr{
+        line-height: 30px;
+    }
+    td.values{
+        margin-left: 45px;
+    }
+    td{
+        font-size: 13px;
+    }
+
+    table.table{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 390px){
+    div.overview{
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    table.table{
+        margin-bottom: 80px;
+    }
+    td{
+        font-size: 12px;
+    }
+    td.values{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 345px){
+    div.overview{
+        padding-top: 20px;
+        padding-bottom: 75px;
+    }
+    table.table{
+        margin-bottom: 60px;
+    }
+    td{
+        font-size: 10px;
+    }
+    td.values{
+        margin-left: 15px;
+    }
+}
